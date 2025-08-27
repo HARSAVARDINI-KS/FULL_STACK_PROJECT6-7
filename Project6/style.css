@@ -1,0 +1,115 @@
+/* Background with gradient */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main container card */
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  width: 380px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Input + Button */
+.input-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-section input:focus {
+  border-color: #2575fc;
+  box-shadow: 0px 0px 6px rgba(37, 117, 252, 0.6);
+}
+
+.input-section button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.input-section button:hover {
+  background: #6a11cb;
+  transform: scale(1.05);
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: #f1f1f1;
+  transform: scale(1.02);
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Delete button */
+li button {
+  background: #ff4b5c;
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+li button:hover {
+  background: #c0392b;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
